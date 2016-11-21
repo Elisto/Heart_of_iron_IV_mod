@@ -1,0 +1,50 @@
+﻿FRA = {
+	submarine = {
+		prefix = ""
+		generic = { "Rawasa" }
+		unique = {
+			"Sallah" "Sari" "fatih" "Zemara"
+		}
+	}
+	destroyer = {
+		prefix = ""
+		generic = { "dhow" }
+		unique = {
+			"Marinda" "toufha"
+		}
+	}
+	light_cruiser = {
+		prefix = ""
+		generic = { "xebrec" }
+		unique = {
+			"Dafira" "Arabia"
+		}
+	}
+	heavy_cruiser = {
+		prefix = ""
+		generic = { "xebrec" }
+		unique = {
+			"Fatiha" "Safi" "Lemsakna"
+		}
+	}
+	battle_cruiser = {
+        prefix = ""
+        generic = { "Tarad" }
+        unique = {
+					"Essaouria" "Dar albida"
+       }
+    }
+    battleship = {
+        prefix = ""
+        generic = { "Saphina Ritwa" }
+        unique = {
+					"Al Malik" "Faracha" "Meknes" "Faz"
+       }
+    }
+	carrier = {
+		prefix = ""
+		generic = { "Halima" }
+		unique = {
+			"Aicha" "Painlevé" "Clemenceau" "Béarn" "Morrakouch" "Ibn sina"
+		}
+	}

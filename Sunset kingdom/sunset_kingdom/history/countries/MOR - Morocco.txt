@@ -1,0 +1,137 @@
+﻿capital = 462
+
+oob = "MOR_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+	MOR_unconquerable_kingdom
+	limited_conscription
+	partial_economic_mobilisation
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	marines  = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	transport = 1
+	trench_warfare = 1
+}
+
+1939.1.1 = {
+	add_political_power = 1198
+	oob = "MOR_1939"
+	add_ideas = {
+		MOR_unconquerable_kingdom
+		limited_conscription
+		partial_economic_mobilisation
+	}
+
+	set_technology = {
+		infantry_weapons = 1
+		tech_support = 1
+		tech_engineers = 1
+		marines  = 1
+		gw_artillery = 1
+		early_fighter = 1
+		early_bomber = 1
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+		trench_warfare = 1
+			#electronics
+			electronic_mechanical_engineering = 1
+			radio = 1
+			radio_detection = 1
+			mechanical_computing = 1
+
+			#industry
+			basic_machine_tools = 1
+			improved_machine_tools = 1
+			advanced_machine_tools = 1
+			synth_oil_experiments = 1
+			oil_plant = 1
+			improved_oil_plant = 1
+			construction1 = 1
+			construction2 = 1
+			dispersed_industry = 1
+			dispersed_industry2 = 1
+	}
+}
+ set_convoys = 50
+ set_national_unity = 0.8
+ set_politics = {
+	 parties = {
+		 democratic = {
+			 popularity = 0
+		 }
+		fascism = {
+			popularity = 15
+		}
+
+		communism = {
+			popularity = 25
+		}
+		neutrality = {
+		 			popularity = 60
+		 }
+	 }
+ ruling_party = neutrality
+ last_election = "1936.1.1"
+ election_frequency = 48
+ elections_allowed = no
+
+ }
+
+create_country_leader = {
+	name ="Mulai Abd al-Aziz IV"
+	desc=""
+	picture = "gfx/leaders/MOR/Abdelaziz_ben_hassan.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+			#
+		}
+}
+create_country_leader = {
+	name ="Ahmed Balafrej"
+	desc=""
+	picture = "gfx/leaders/MOR/ahmed_balafrej.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+			#
+	}
+}
+create_country_leader = {
+	name = "Mohamed Hassan Ouazzani"
+	desc = ""
+	picture ="gfx/leaders/MOR/Mohamed_Hassan_Ouazzani.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+
+	}
+}
+
+create_corps_commander = {
+	name = "Ahmed Al fazi"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { desert_fox }
+	skill = 4
+}

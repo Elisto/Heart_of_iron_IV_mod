@@ -1,0 +1,101 @@
+﻿l_english:
+
+  morocco_focus:0 "Morocco National Focus"
+
+
+  MOR_industry:0 "Civil industry"
+  MOR_industry_desc:0 "We must construct more civiling factory"
+  MOR_industry_2:0 "Civil industry II"
+  MOR_industry_2_desc:0 "We must construct more civiling factory"
+  MOR_industry_3:0 "Civil Industry III"
+  MOR_industry_3_desc:0 "We must construct more civiling factory"
+
+  MOR_infrastructure:0 "infrastructure effort"
+  MOR_infrastructure_desc:0 "We need infrastructure to move your troops"
+  MOR_infrastructure_2:0 "infrastructure effort II"
+  MOR_infrastructure_2_desc:0 "We need infrastructure to move your troops"
+
+
+  MOR_defense_front:0 "The Maghnia wall"
+  MOR_defense_front_desc:0 "We must protect us once again imperialist France by fortifying ur borders"
+  MOR_defense_front_2:0 "Coast protection"
+  MOR_defense_front_2_desc:0 "We need to protect our coast"
+
+
+  MOR_navy_focus:0 "Improve Naval Production"
+  MOR_navy_focus_desc:0 "We had the one of the most feared navy, we will restore our old glory"
+  MOR_navy_focus_2:0 "Improve Naval Production 2"
+  MOR_navy_focus_desc:0 "We had the one of the most feared navy, we will restore our old glory"
+
+
+  MOR_military_focus:0 "Military industry"
+  MOR_military_focus_desc:0 "We must construct more Military factory"
+  MOR_military_focus_2:0 "Military industry II"
+  MOR_military_focus_2_desc:0 "We must construct more Military factory"
+
+  MOR_army_focus:0 "Army Reform"
+  MOR_army_focus_desc:0 "Our Army is not strong enough we need to reform it"
+  MOR_army_black_gard:0 "Improve the Black Guard"
+  MOR_army_black_gard_desc:0 "For centuries servants of al-Bukhari stayed loyal to our country now it's the time to thank them and improve them"
+  MOR_army_focus_2:0 "Army Reform II"
+  MOR_army_black_gard_abolish:0 "Abolish the Black guard"
+  MOR_army_black_gard_abolish_desc:0 "we need to abolish indentured servitude."
+
+
+  MOR_research_focus:0 "Industry Reform"
+
+  MOR_navy_reform:0 "Improve the Royal Navy"
+  MOR_navy_reform_2:0 "Improve the Royal Navy II"
+
+  MOR_air_reform:0 "Improve the Royal Air force"
+  MOR_air_reform_2:0 "Improve the Royal Air force II"
+
+  MOR_women_pilots:0 "Women in aviation"
+  MOR_women_pilots_desc:0 "Like in the ocean, women will serve in the air"
+
+
+  MOR_place_sun:0 "A place in the West"
+  MOR_place_sun_desc:0 "As always we will raise for the ashes and have a place in this world "
+
+  MOR_cherif:0 "The old Empire rise again"
+  MOR_cherif_desc:0 "The sunset never fade"
+
+  MOR_claim_focus:0 "Reclaim South province"
+  MOR_claim_focus_desc:0 "We will reclaim our lost territory "
+  MOR_claim_focus_2:0 "Claim the Al Andalouse"
+  MOR_claim_focus_3:0 "Claim Algeria"
+  MOR_war_france:0"Liberate our borthers !"
+
+  MOR_makhzen:0 "Makhzen reform"
+  MOR_makhzen_desc:0 "We must reform the Makhzen"
+
+  MOR_past_focus:0 "Past Glory"
+  MOR_past_focus:0 "We must restore our glorius prestige."
+
+  MOR_nahda:0 "Nahda"
+  MOR_nahda_desc:0 "it's time to be reborn as a new country, it's time to advance and be reborn."
+
+  MOR_statu_quo:0 "Maintain the status quo"
+  MOR_statu_quo_desc:0 "for our sake we must remain neutral."
+
+  MOR_panarab:0 "Arabic Revolution"
+  MOR_panarab_desc:0 "Hussein has show us the way, Arab unit under one great Socialiste power !"
+
+  MOR_democ:0"Modern Reform"
+  MOR_democ_desc:0 "We need a constitution."
+
+  MOR_arab_league:0"Forme the Arab Socialiste league"
+  MOR_arab_league:0"in this day we will form a league that will united all of arab people into one big sphere"
+
+  MOR_democ_2:0"Road to Democracy"
+  MOR_democ_2_desc:0 "Demos cratos"
+
+  MOR_rock:0 "The old rock"
+  MOR_rock_2:0 "Al jabel"
+
+  MOR_research_improve:0 "Improve Al Quaraouiyine"
+  MOR_research_improve_2:0 "Restore The House of science"
+  MOR_research_improve_3:0 "Ibn Rochd Legacy"
+  MOR_research_improve_4:0 "Restore the Mu'tazila"
+  MOR_research_atom:0 "New field of science"
+  MOR_research_rocket:0 "Improve the old rocketry"

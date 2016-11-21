@@ -1,0 +1,950 @@
+focus_tree = {
+	id = morocco_focus
+
+	country = {
+		factor = 0
+
+
+	modifier = {
+		add = 10
+		tag = MOR
+	}
+}
+
+
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = MOR_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}
+		}
+
+	 }
+	    focus = {
+	 		 id = MOR_industry_2
+	 		 icon = GFX_goal_generic_construct_civ_factory
+			 prerequisite = { focus = MOR_industry }
+	 		 x = 0
+	 		 y = 1
+			 cost = 10
+			 completion_reward = {
+				 # North
+				 290 = {add_extra_state_shared_building_slots = 2
+					 			add_building_construction = {
+					 			type = industrial_complex
+					 			level = 1
+					 			instant_build = yes
+					 		}
+
+				 }
+				 # Center
+				461 = {add_extra_state_shared_building_slots = 2
+				 			add_building_construction = {
+				 			type = industrial_complex
+				 			level = 1
+		        	instant_build = yes
+				 					 		}
+
+				 				 }
+						# south
+						462 = {add_extra_state_shared_building_slots = 2
+								 		add_building_construction = {
+								 		type = industrial_complex
+								 		level = 1
+								 		instant_build = yes
+									}
+
+					 }
+				}
+     }
+		focus = {
+			id = MOR_industry_3
+		  icon = GFX_goal_generic_construct_civ_factory
+			prerequisite = { focus = MOR_industry_2 }
+			x = 0
+			y = 2
+			cost = 10
+			completion_reward = {
+				# south
+				462 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+
+			}
+		}
+		focus = {
+			id = MOR_infrastructure
+			icon = GFX_goal_generic_construct_infrastructure
+			prerequisite = { focus = MOR_industry_3}
+			x = 0
+			y = 5
+			cost = 10
+			completion_reward = {
+								 # North
+								 290 = {
+									 			add_building_construction = {
+									 			type = infrastructure
+									 			level = 2
+									 			instant_build = yes
+									 		}
+
+								 }
+								 # Center
+								461 = {
+								 			add_building_construction = {
+								 			type = infrastructure
+								 			level = 2
+						        	instant_build = yes
+								 					 		}
+
+								 				 }
+										# south
+										462 = {
+												 		add_building_construction = {
+												 		type = infrastructure
+												 		level = 2
+												 		instant_build = yes
+													}
+
+									 }
+			}
+		}
+		focus = {
+			id = MOR_infrastructure_2
+			icon = GFX_goal_generic_construct_infrastructure
+			prerequisite = { focus = MOR_infrastructure}
+			x = 0
+			y = 6
+			cost = 10
+			completion_reward = {
+								 # North
+								 290 = {
+									 			add_building_construction = {
+									 			type = infrastructure
+									 			level = 2
+									 			instant_build = yes
+									 		}
+
+								 }
+								 # Center
+								461 = {
+								 			add_building_construction = {
+								 			type = infrastructure
+								 			level = 2
+						        	instant_build = yes
+								 					 		}
+
+								 				 }
+										# south
+										462 = {
+												 		add_building_construction = {
+												 		type = infrastructure
+												 		level = 2
+												 		instant_build = yes
+													}
+
+									 }
+			}
+		}
+
+focus ={
+		id = MOR_research_focus
+		icon = GFX_focus_research
+		prerequisite = { focus = MOR_navy_focus_2}
+		prerequisite = { focus = MOR_military_focus_2}
+		x = 2
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+}
+
+
+
+#SECOND BRANCHE : THE DEFENSE
+
+ focus = {
+	 id = MOR_defense_front
+	 icon = GFX_goal_generic_construct_military
+	 x = 2
+	 y = 0
+	 cost = 10
+	 completion_reward = {
+		461 = {
+		 add_building_construction = {
+			 	type = bunker
+			 	level = 3
+			 	province = 989
+			 	instant_build = yes
+		 }
+		 add_building_construction = {
+			 	type = bunker
+			 	level = 3
+			 	province = 7116
+			 	instant_build = yes
+		 }
+	 }
+	 462 = {
+		 add_building_construction = {
+				type = bunker
+				level = 3
+			  province = 7958
+				instant_build = yes
+				 }
+	 }
+ 	}
+ }
+focus = {
+	id = MOR_defense_front_2
+	icon = GFX_goal_generic_defence
+	prerequisite = { focus = MOR_defense_front }
+	x = 2
+	y = 2
+	cost = 10
+	completion_reward = {
+		# North
+		290 = {
+					 add_building_construction = {
+					 type = coastal_bunker
+					 level = 1
+					 province = 4199
+					 instant_build = yes
+				 }
+				 			 add_building_construction = {
+		 					 type = coastal_bunker
+		 					 level = 1
+		 					 province = 7215
+		 					 instant_build = yes
+		 				 }
+						 			 add_building_construction = {
+				 					 type = coastal_bunker
+				 					 level = 1
+				 					 province = 9945
+				 					 instant_build = yes
+				 				 }
+								 			 add_building_construction = {
+						 					 type = coastal_bunker
+						 					 level = 1
+						 					 province = 10113
+						 					 instant_build = yes
+						 				 }
+										 			 add_building_construction = {
+								 					 type = coastal_bunker
+								 					 level = 1
+								 					 province = 12087
+								 					 instant_build = yes
+								 				 }
+												 			 add_building_construction = {
+										 					 type = coastal_bunker
+										 					 level = 1
+										 					 province = 12100
+										 					 instant_build = yes
+										 				 }
+		}
+		# Center
+	 461 = {
+				 add_building_construction = {
+				 type = coastal_bunker
+				 level = 1
+				 province = 1194
+				 instant_build = yes
+								 }
+				add_building_construction = {
+						 type = coastal_bunker
+							level = 1
+							province = 10070
+							instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 7069
+					instant_build = yes
+								}
+								add_building_construction = {
+			 				 type = coastal_bunker
+			 				 level = 1
+			 				 province = 11943
+			 				 instant_build = yes
+			 								 }
+						}
+			 # south
+			 462 = {
+							 add_building_construction = {
+							 type = coastal_bunker
+							 level = 1
+							 province = 1102
+							 instant_build = yes
+						 }
+						  add_building_construction = {
+	 							 type = coastal_bunker
+	 							 level = 1
+	 							 province = 7203
+	 							 instant_build = yes
+	 					 }
+							 add_building_construction = {
+		 						 type = coastal_bunker
+		 						 level = 1
+		 						 province = 5046
+		 						 instant_build = yes
+		 						 }
+
+				 			 }
+	}
+}
+
+
+# IN THE NAVY lalalalala in THE NAVY LALALALALA
+
+focus = {
+			id = MOR_navy_focus
+			icon = GFX_goal_generic_construct_naval_dockyard
+			prerequisite = { focus = MOR_defense_front_2}
+			x = 3
+			y = 3
+			cost = 10
+			completion_reward = {
+							add_tech_bonus = {
+								name = fleet_in_being_bonus
+								bonus = 0.5
+								uses = 2
+								category = fleet_in_being_tree
+							}
+					 # North
+					 290 = {add_extra_state_shared_building_slots = 2
+						 			add_building_construction = {
+						 			type = dockyard
+						 			level = 2
+						 			instant_build = yes
+						 		}
+
+					 }
+					 # Center
+					461 = {add_extra_state_shared_building_slots = 2
+					 			add_building_construction = {
+					 			type = dockyard
+					 			level = 2
+			        	instant_build = yes
+					 					 		}
+
+					 				 }
+							# south
+							462 = {add_extra_state_shared_building_slots = 2
+									 		add_building_construction = {
+									 		type = dockyard
+									 		level = 2
+									 		instant_build = yes
+										}
+
+						 }
+					}
+			}
+
+focus = {
+   id = MOR_navy_focus_2
+	 icon = GFX_goal_generic_construct_naval_dockyard
+	 prerequisite = { focus = MOR_navy_focus}
+	 x = 3
+	 y = 4
+	 cost = 10
+	 completion_reward = {
+		 462 = {add_extra_state_shared_building_slots = 3
+						 add_building_construction = {
+						 type = dockyard
+						 level = 3
+						 instant_build = yes
+					 }
+
+	 }
+}
+}
+# IN THE ARMY WE TRUST :^)
+# Glorius song : https://youtu.be/mKjfkmhH0G8
+
+
+focus  = {
+		id = MOR_military_focus
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {focus = MOR_industry_3}
+		prerequisite = {focus = MOR_defense_front_2}
+		x = 1
+		y = 3
+		cost = 10
+		completion_reward = {
+				 # North
+				 290 = {add_extra_state_shared_building_slots = 2
+								add_building_construction = {
+								type = arms_factory
+								level = 2
+								instant_build = yes
+							}
+
+				 }
+				 # Center
+				461 = {add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+											}
+
+								 }
+						# south
+						462 = {add_extra_state_shared_building_slots = 2
+										add_building_construction = {
+										type = arms_factory
+										level = 2
+										instant_build = yes
+									}
+		}
+
+}
+}
+
+focus = {
+	id = MOR_military_focus_2
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = MOR_military_focus}
+	x = 1
+	y = 4
+	cost = 10
+	completion_reward = {
+								# south
+								462 = {add_extra_state_shared_building_slots = 3
+												add_building_construction = {
+												type = arms_factory
+												level = 3
+												instant_build = yes
+											}
+	}
+}
+}
+
+# ARMY REFORM
+focus = {
+	id = MOR_army_focus
+	icon = GFX_goal_generic_axis_build_infantry
+	x = 8
+	y = 0
+	cost = 10
+	completion_reward = {
+		army_experience = 20
+	}
+}
+
+# black guard
+
+ focus = {
+	 id = MOR_army_black_gard
+	 icon = GFX_goal_generic_military_deal
+	 x = 7
+	 y = 1
+	 cost = 10
+	 prerequisite = {focus = MOR_army_focus}
+	 mutually_exclusive = { focus = MOR_army_black_gard_abolish}
+	 available = {
+		 OR ={
+			 has_government = neutrality
+			 has_government = fascism
+		 }
+	 }
+	 completion_reward = {
+		 army_experience = 20
+		 add_ideas = {MOR_black_gard}
+	 }
+ }
+
+ focus = {
+	 id = MOR_army_black_gard_abolish
+	 icon = GFX_goal_generic_neutrality_focus
+	 x = 9
+	 y = 1
+	 cost = 10
+	 prerequisite = {focus = MOR_army_focus}
+	 mutually_exclusive = {focus = MOR_army_black_gard}
+	 available = {
+		 NOT = {
+			 has_government  = fascism
+		 }
+	 }
+		 completion_reward = {
+			 army_experience = 5
+			 add_political_power = 100
+			 add_ideas = {MOR_black_gard_abolish}
+		 }
+	 }
+
+# Army reform 2
+
+focus = {
+	id = MOR_army_focus_2
+	icon = GFX_goal_generic_axis_build_infantry
+	prerequisite = { focus = MOR_army_black_gard focus = MOR_army_black_gard_abolish}
+	x = 8
+	y = 2
+	cost = 10
+	completion_reward = {
+					add_tech_bonus = {
+						name = infantry_weapons_bonus
+						bonus = 0.5
+						uses = 3
+						category = land_doctrine
+						category = infantry_weapons
+						category = artillery
+					}
+	}
+}
+
+focus = {
+	id = MOR_navy_reform
+	icon = GFX_goal_generic_navy_battleship
+	prerequisite = { focus = MOR_army_focus_2}
+	x = 10
+	y = 3
+	cost = 10
+	completion_reward = {
+		navy_experience = 25
+		add_tech_bonus = {
+					name = fleet_in_being_bonus
+					bonus = 0.5
+					uses = 2
+					category = fleet_in_being_tree
+		}
+	}
+}
+focus = {
+	id = MOR_navy_reform_2
+	icon = GFX_goal_generic_navy_submarine
+	prerequisite = { focus = MOR_navy_reform}
+		x = 10
+		y = 4
+		cost = 10
+	completion_reward = {
+				navy_experience = 25
+				add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 0.5
+							uses = 2
+							technology = early_submarine
+							technology = basic_submarine
+							technology = improved_submarine
+							technology = advanced_submarine
+				}
+			}
+}
+focus = {
+	id = MOR_air_reform
+	icon = GFX_goal_generic_build_airforce
+	prerequisite = { focus = MOR_army_focus_2}
+	x = 6
+	y = 3
+	cost = 10
+	completion_reward = {
+		air_experience = 25
+		462 = {
+							add_building_construction = {
+							type = air_base
+							level = 3
+							instant_build = yes
+		}
+	}
+}
+}
+focus = {
+	id = MOR_air_reform_2
+	icon = GFX_goal_generic_air_fighter2
+	prerequisite = { focus = MOR_air_reform}
+	x = 6
+	y = 4
+	cost = 10
+	completion_reward = {
+					add_tech_bonus = {
+						name = air_doc_bonus
+						bonus = 0.5
+						uses = 1
+						category = air_doctrine
+					}
+	}
+}
+
+focus = {
+	id = MOR_women_pilots
+	icon = GFX_goal_generic_CAS
+	prerequisite = {focus = MOR_air_reform_2}
+	x = 6
+	y = 5
+	cost = 10
+	completion_reward = {
+		air_experience = 25
+		set_rule = {
+			can_generate_female_aces = yes
+		}
+	}
+}
+
+focus = {
+	id = MOR_cherif
+	icon = GFX_goal_anschluss
+	prerequisite = {focus = MOR_past_focus}
+	mutually_exclusive = {focus = MOR_statu_quo}
+	x = 13
+	y = 2
+	cost = 10
+	available = {
+		has_government = fascism
+	}
+	completion_reward = {
+		add_ideas = MOR_Cherif_rise
+	}
+}
+focus = {
+	id = MOR_place_sun
+	icon = GFX_goal_support_fascism
+		prerequisite = {focus =  MOR_cherif}
+		x = 13
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_political_power = 250
+			set_rule = { can_create_factions = yes }
+		}
+}
+# STATE reform
+focus = {
+	id = MOR_makhzen
+	icon = GFX_goal_generic_occupy_states_ongoing_war
+	x = 16
+	y = 0
+	cost = 10
+	completion_reward = {
+		add_political_power = 150
+	}
+}
+
+focus =  {
+	id = MOR_past_focus
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = {focus =  MOR_makhzen}
+	mutually_exclusive = {focus = MOR_nahda}
+	x = 15
+	y = 1
+	cost = 10
+	completion_reward = {
+		add_political_power = 150
+
+	}
+}
+#neutral focus
+focus = {
+	id = MOR_statu_quo
+	icon = GFX_goal_generic_political_pressure
+	prerequisite = {focus =  MOR_past_focus}
+	mutually_exclusive = {focus = MOR_cherif}
+	x = 15
+	y = 2
+	cost = 10
+	completion_reward = {
+		add_political_power = 150
+	}
+}
+focus = {
+	id = MOR_rock
+	icon = GFX_goal_generic_more_territorial_claims
+	prerequisite = { focus = MOR_statu_quo}
+	x = 15
+	y = 3
+	cost = 10
+	completion_reward = {
+		add_political_power = 150
+		set_rule = {can_send_volunteers = yes }
+	}
+}
+focus = {
+	id = MOR_rock_2
+	icon = GFX_goal_generic_alliance
+	prerequisite = {focus = MOR_rock}
+	x = 15
+	y = 4
+	cost = 10
+	completion_reward = {
+		add_political_power = 150
+		set_rule ={ can_create_factions = yes}
+	}
+}
+# revolution
+focus = {
+	id = MOR_nahda
+	icon = GFX_goal_generic_demand_territory
+	prerequisite = {focus =  MOR_makhzen}
+	mutually_exclusive = {focus = MOR_past_focus}
+	x = 17
+	y = 1
+	cost = 10
+ completion_reward = {
+			add_political_power = 150
+		}
+}
+
+# Democratic focus
+focus = {
+	id = MOR_democ
+	icon = GFX_goal_support_democracy
+	prerequisite = {focus =  MOR_nahda}
+	mutually_exclusive = {focus = MOR_panarab}
+	x = 19
+	y = 2
+	cost = 10
+	completion_reward = {
+		add_ideas = MOR_democ_revolution
+	}
+}
+focus = {
+	id = MOR_democ_2
+	icon = GFX_goal_generic_alliance
+	prerequisite = {focus = MOR_democ}
+	x = 19
+	y = 4
+	cost = 10
+	completion_reward = {
+		add_political_power = 250
+		set_rule = { can_create_factions = yes }
+	}
+}
+# PANARABE BRANCHE
+
+focus ={
+	id = MOR_panarab
+	icon = GFX_goal_generic_national_unity
+	prerequisite = {focus =  MOR_nahda}
+	mutually_exclusive = {focus = MOR_democ}
+	x = 17
+	y = 2
+	cost = 10
+	completion_reward = {
+		add_ideas = MOR_arabic_revolution
+	}
+
+}
+
+focus = {
+	id = MOR_arab_league
+	icon = GFX_goal_tripartite_pact
+	prerequisite = {focus = MOR_panarab}
+	x = 17
+	y = 4
+	cost = 10
+	available = {
+		has_government = communism
+	}
+	completion_reward = {
+					add_political_power = 250
+					set_rule = { can_create_factions = yes }
+					create_faction = "Arab Socialiste league"
+
+	}
+}
+
+# SCIENCE FOCUS
+focus = {
+	id = MOR_research_improve
+	icon = GFX_focus_research
+	x = 22
+	y = 0
+	cost = 10
+	completion_reward = {
+		add_ideas = MOR_restore_school
+	}
+}
+
+focus = {
+	id = MOR_research_improve_2
+	icon = GFX_focus_research
+	prerequisite = {focus = MOR_research_improve}
+	x = 22
+	y = 1
+	cost = 10
+	completion_reward = {
+		add_ideas = MOR_research_bonus
+	}
+}
+focus = {
+	id = MOR_research_improve_3
+	icon = GFX_focus_research
+	prerequisite = {focus = MOR_research_improve_2}
+	x = 22
+	y = 2
+	cost = 10
+	completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+	}
+}
+focus = {
+	id = MOR_research_improve_4
+	icon = GFX_focus_research
+	prerequisite = {focus = MOR_research_improve_3}
+	x = 22
+	y = 3
+	cost = 10
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+
+focus = {
+	id = MOR_research_atom
+	icon = GFX_goal_generic_secret_weapon
+	prerequisite = {focus = MOR_research_improve_4}
+	x = 23
+	y = 4
+	cost = 10
+	completion_reward = {
+			add_tech_bonus = {
+						ahead_reduction = 0.5
+						bonus = 0.5
+						uses = 2
+						category = nuclear
+	}
+}
+}
+focus = {
+	id = MOR_research_rocket
+	icon = GFX_focus_rocketry
+	prerequisite = {focus = MOR_research_improve_4}
+	x = 21
+	y = 4
+	cost = 10
+	completion_reward = {
+			add_tech_bonus = {
+						ahead_reduction = 0.5
+						bonus = 0.5
+						uses = 2
+						category = rocketry
+						category = jet_technology
+	}
+}
+}
+
+# claim focus branch
+focus = {
+	id = MOR_claim_focus
+	icon = GFX_goal_generic_more_territorial_claims
+	available = {
+		has_army_manpower = { size > 20000}
+	}
+	x = 26
+	y = 0
+	cost = 10
+	bypass = {
+		OR = {
+			has_war_with = SPR
+		}
+	}
+	completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = SPR
+			generator = {699}
+		}
+	}
+}
+focus = {
+	id = MOR_claim_focus_2
+	icon = GFX_goal_generic_attack_allies
+	prerequisite = {focus = MOR_claim_focus }
+	x = 26
+	y = 1
+	cost = 10
+	completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = SPR
+			generator = {169}
+		}
+	 create_wargoal = {
+			type = take_state_focus
+			target = SPR
+			generator = {173}
+				}
+	}
+}
+focus = {
+	id = MOR_claim_focus_3
+	icon = GFX_goal_anschluss
+	prerequisite = { focus = MOR_claim_focus_2}
+	x = 26
+	y = 2
+	cost = 10
+	completion_reward = {
+		add_state_core = 513
+		add_state_core = 514
+		add_state_core = 458
+		add_state_core = 459
+		add_state_core = 460
+	}
+}
+focus = {
+	id = MOR_war_france
+	icon = GFX_goal_generic_major_war
+	available = {
+			has_army_manpower = { size > 80000}
+	}
+	bypass = {
+			OR = {
+				has_war_with = FRA
+			}
+		}
+	prerequisite = { focus = MOR_claim_focus_3}
+	x = 26
+	y = 3
+	will_lead_to_war_with = FRA
+	completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = FRA
+			generator = {513}
+		}
+	 create_wargoal = {
+			type = take_state_focus
+			target = FRA
+			generator = {514}
+				}
+
+	create_wargoal = {
+		type = take_state_focus
+		target = FRA
+		generator = {458}
+	}
+ create_wargoal = {
+		type = take_state_focus
+		target = FRA
+		generator = {459}
+			}
+			 create_wargoal = {
+					type = take_state_focus
+					target = FRA
+					generator = {460}
+						}
+}
+	}

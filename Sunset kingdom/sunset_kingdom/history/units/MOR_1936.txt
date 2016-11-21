@@ -1,0 +1,105 @@
+﻿division_template = {
+	name = "Jaysh Al-Souhoul"			# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Black guard"			# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+				artillery = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Jaysh Al-Attlas"				# Mountain Division
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+
+
+units = {
+	##### Royal Morrocan Army #####
+	division = {
+		name = "Souhoul 1"
+		location = 11987
+		division_template = "Jaysh Al-Souhoul"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Attlas 1"
+		location = 7100
+		division_template = "Jaysh Al-Attlas"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Black guard"
+		location = 7069
+		division_template = "Black guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+navy ={
+	name = "Al quwwat Al bahria"
+	base = 7069
+	location = 7069
+	ship = { name ="Tariq ibn ziyad" definition = battleship equipment = { battleship_1 = { amount = 1 owner = MOR } } }
+	ship = { name = "Sayyida al hurra" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MOR } } }
+	ship = { name = "Fez" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOR } } }
+	ship = { name = "Tanga" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOR } } }
+	ship = { name = "Al ksar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOR } } }
+	ship = { name = "Yusef" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MOR } }	}
+	ship = { name = "Ahmed al-Mansour" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MOR } } }
+	ship = { name = "Idreis 1" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MOR } } }
+}
+}
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "MOR"
+		}
+		requested_factories = 1
+		progress = 0.22
+		efficiency = 50
+	}
+	add_equipment_production = {
+			equipment = {
+				type = artillery_equipment_1
+				creator = "MOR"
+			}
+			requested_factories = 1
+			progress = 0.3
+			efficiency = 50
+		}
+}
